@@ -1,0 +1,76 @@
+.header {
+    height: 80px;
+    background-color: #4B565E;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+    color: white;
+    margin: 0px;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 30px;
+}
+.header__nav {
+    display: flex;
+}
+.header_nav_item {
+    size: 16px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+.phone {
+    display: flex;
+    margin-right: 30px;
+}
+
+.button {
+    background-color: #4B565E;
+    color: white;
+    width: 126px;
+    border-radius: 50px;
+    border: #F0BA4E solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    background-color: #F0BA4E;
+    height: 48px;
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container__left {
+    display: flex;
+    align-items: center;
+}
+.container__right {
+    display: flex;
+    align-items: center;
+}
+.container__search {
+    background-color: #F0BA4E;
+    border: none;
+    outline: none;
+    width: 300px;
+}
+.container__input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-right: 10px;
+}
+.container__map {
+    color: white;
+    size: 14px;
+}
