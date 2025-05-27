@@ -1,49 +1,151 @@
 <div class="header">
-  <div class="header__left">
-    <div class="header__logo">
-      <img src="/assets/Frame.svg" alt="Логотип">
+  <div class="header_left">
+    <div class="header_logo">
+      <img src="/assets/logo.svg" alt="Логотип">
     </div>
-    <nav class="header__nav">
-      <span style="width: 65px; margin-right: 15px;">Главная</span>
-      <span style="width: 95px; margin-right: 15px;">О компании</span>
-      <span style="width: 65px;">Каталог</span>
+    <nav class="header_nav">
+      <a class="header_main">Главная</a>
+      <a class="header_aboutcompany">О компании</a>
+      <a class="header_catalog">Каталог</a>
     </nav>
   </div> 
   
-  <div class="header__right">
-    <div class="phone">
-      <img style="margin-right: 7px;" src="/assets/Phone-2.svg" alt="Телефон">
-      <span style="margin-top: 5px;">+7 (965) 084-29-29</span>
+  <div class="header_right">
+    <div class="header_right_phone">
+     <a>
+      <img class="header_right_phone_img" src="/assets/phone.svg" alt="Телефон">
+     </a>
+      <a class="header_right_phone_number">+7 (965) 084-29-29</a>
     </div>
-    <img style="margin-right: 30px" src="/assets/Vector.svg" alt="Сердце">
-    <div class="header__button">
+    <a>
+    <img class="header_right_heart" src="/assets/heart.svg" alt="Сердце">
+    </a>
+    <div class="header_button">
       <button class="button">
-        <img style="margin-left: 5px;" src="/assets/Mask group-2.svg" alt="Корзина">
-        <span style="margin-right: 15px;">Пусто</span>
+        <img class="header_button_bucket" src="/assets/bucket.svg" alt="Корзина">
+        <span class="header_button_empty">Пусто</span>
       </button>  
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="container__left">
-    <img style="margin-right: 7px;" src="/assets/light.svg" alt="Линии">
+  <div class="container_left">
+    <img style="margin-right: 7px;" src="/assets/lines.svg" alt="Линии">
     <div>
-      <span style="margin-right: 15px;">Каталог</span>
-      <span style="margin-right: 15px;">Стройматериалы</span>
-      <span style="margin-right: 15px;">Инструменты</span>
-      <span style="margin-right: 15px;">Электрика</span>
-      <span>Интерьер и одежда</span> 
+      <button class="container_left_catalog">Каталог</button>
+      <button class="container_left_materials">Стройматериалы</button>
+      <button class="container_left_tools">Инструменты</button>
+      <button class="container_left_electrics">Электрика</button>
+      <button class="container_left_cloth">Интерьер и одежда</button>
     </div>
   </div> 
-  <div class="container__right">
-    <div class="container__input">
-    <input class="container__search" type="search" placeholder="Поиск, например Круг зачистной">
-    <img src="/assets/Mask group.svg" alt="Лупа">
+  <div class="container_right">
+    <div class="container_input">
+    <input class="container_search" type="search" placeholder="Поиск, например Круг зачистной">
+    <img src="/assets/glass.svg" alt="Лупа">
     </div>
-    <div class="container__map">
-      <img style="margin-right: 3px;" src="/assets/map-pin (2) 1.svg" alt="Точка">
+    <div class="container_map">
+      <img class="container_right_map" src="/assets/map_point.svg" alt="Точка">
       <span>Москва</span>
     </div>
   </div>
+</div>
+
+<div>
+    <img class="image_worker" src="/assets/worker.png" alt="Рабочий">
+</div>
+<div class="shelf">
+    <div class="shelf_box">
+      <img class="shelf_wall" src="/assets/brick_wall.svg" alt="Стенка">
+      <div class="shelf_text">
+       <span>Большой ассортимент</span>
+       <span class="shelf_grey_text">строительных материалов всегда в наличии</span>
+      </div>
+    </div>  
+     
+    <div class="shelf_box">
+      <img class="shelf_margin_right" src="/assets/car.svg" alt="Доставка">
+      <div class="shelf_text">
+       <span>Доставка стройматериалов</span> 
+       <span class="shelf_grey_text">в течение четырех часов или в любое удобное время</span>
+      </div>
+    </div> 
+    
+    <div class="shelf_box">
+      <img class="shelf_margin_right" src="/assets/like.svg" alt="Лайк">
+      <div class="shelf_text">
+        <span class="shelf_grey_text">Многоуровневая <span class="shelf_black_text">cистема</span></span> <span>упраления качеством <span class="shelf_grey_text">по стандарту</span></span><span class="shelf_grey_text"> ISO 9001</span>
+      </div>  
+    </div>
+</div>
+<div class="content_container">
+  <div class="item_cards">
+    <div class="item_cards__pagination">
+      <button class="item_cards__pagination_button active_button">1</button>
+      <button class="item_cards__pagination_button">2</button>
+      <button class="item_cards__pagination_button">3</button>
+      <button class="item_cards__pagination_button">4</button>
+      <button class="item_cards__pagination_button">5</button>
+    </div>
+    <div class="content_container">
+      <div class="item_cards__grid">
+        <div class="item_cards__grid_left">
+          <span class="item_cards__grid_left_text">Строительный отделочный инструмент</span> 
+          <div class="item_cards__grid_left_action">
+            <span class="item_cards__grid_left_action_catalog">Перейти в каталог</span>
+            <a>
+              <img src="/assets/arrow.svg" alt="Стрелка">
+            </a>
+          </div> 
+        </div>
+        <div class="item_cards__grid_right">
+          <div class="item_cards__grid_right_block">
+            <div class="item_cards__grid_right_block_first">
+              <span class="item_cards__grid_right_block_first_text">Эмали</span>
+              <div class="item_cards__grid_right_block_first_action">
+               <span class="item_cards__grid_right_block_first_catalog">Перейти в каталог</span>
+              <a>
+               <img src="/assets/arrow.svg" alt="Стрелка">
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="item_cards__grid_right_block">
+           <div class="item_cards__grid_right_block_second">
+            <span class="item_cards__grid_right_block_second_text">Лакокрасочные 
+                материалы</span>
+            <div class="item_cards__grid_right_block_second_action"> 
+             <span class="item_cards__grid_right_block_second_catalog">Перейти в каталог</span>    
+             <a>
+              <img src="/assets/arrow.svg" alt="Стрелка">
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="item_cards__grid_right_block">
+           <div class="item_cards__grid_right_block_third">
+            <span class="item_cards__grid_right_block_third_text">Пены, клеи и герметики</span>
+             <div class="item_cards__grid_right_block_third_action">
+              <span class="item_cards__grid_right_block_third_catalog">Перейти в каталог</span>
+               <a>
+                <img src="/assets/arrow.svg" alt="Стрелка">
+               </a>
+             </div>
+            </div>
+          </div>
+          <div class="item_cards__grid_right_block">
+           <div class="item_cards__grid_right_block_four">
+            <span class="item_cards__grid_right_block_four_text">Розетки и выключатели</span>
+            <div class="item_cards__grid_right_block_four_action">
+             <span class="item_cards__grid_right_block_four_catalog">Перейти в каталог</span>
+              <a>
+                <img src="/assets/arrow.svg" alt="Стрелка">
+              </a>
+            </div>
+           </div>  
+          </div>
+        </div>
+      </div>
+      </div>
 </div>
