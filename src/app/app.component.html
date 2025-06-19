@@ -5,9 +5,11 @@
     </div>
     <nav class="header_nav">
       <a class="header_main">Главная</a>
-      <a class="header_aboutcompany">О компании</a>
-      <a class="header_catalog">Каталог</a>
+      <a class="header_aboutcompany">{{aboutCompany}}</a>
+      <a class="header_catalog" *ngIf="isShowCatalog">{{headerItem3}}</a>
     </nav>
+    <button (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
+    <button (click)="isUpperCase = !isUpperCase">Изменить текст</button>
   </div> 
   
   <div class="header_right">
@@ -52,7 +54,9 @@
   </div>
 </div>
 
-<div>
+<button (click)="isShowImg = !isShowImg">Скрыть/Показать</button>
+
+<div *ngIf="isShowImg">
     <img class="image_worker" src="/assets/worker.png" alt="Рабочий">
 </div>
 <div class="shelf">
@@ -82,11 +86,7 @@
 <div class="content_container">
   <div class="item_cards">
     <div class="item_cards__pagination">
-      <button class="item_cards__pagination_button active_button">1</button>
-      <button class="item_cards__pagination_button">2</button>
-      <button class="item_cards__pagination_button">3</button>
-      <button class="item_cards__pagination_button">4</button>
-      <button class="item_cards__pagination_button">5</button>
+      <button class="item_cards__pagination_button active_button" *ngFor="let item of newPages">{{item}}</button>
     </div>
     <div class="content_container">
       <div class="item_cards__grid">
