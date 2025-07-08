@@ -1,45 +1,37 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterLink, RouterOutlet } from '@angular/router';
+    
 const aboutCompanyFn = (text: string) => text;
 
-const aboutCompany = aboutCompanyFn ('О компании');
+const aboutCompany : string = aboutCompanyFn ('О компании');
 
-const newPages = [5, 4, 3, 2, 1];
-
-const menuItems  = ['Каталог','Стройматериалы', 'Инструменты', 'Электрика', 'Интерьер и одежда'];
-
-
-
-
-
+const newPages : number[]= [5, 4, 3, 2, 1];
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgIf, NgFor],
+  imports: [RouterOutlet, NgIf, NgFor, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title: string = 'mentoring-first-project';
   
-  isShowAboutCompany = true;
+  isShowAboutCompany: boolean = true;
   
-  isShowCatalog = true;
+  isShowCatalog: boolean = true;
   
-  readonly headerItem3 = 'Каталог';
+  readonly headerItem3 :'Каталог' = 'Каталог';
   
-  isShowImg = true;
+  isShowImg: boolean = true;
   
-  readonly newPages = newPages;
+  readonly newPages :number[] = newPages;
   
-  readonly aboutCompany = aboutCompany;
-  
-  isUpperCase = true;
-  
-
-
+  readonly aboutCompany :string = aboutCompany;
 }
+
+
+
+
 

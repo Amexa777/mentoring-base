@@ -9,9 +9,7 @@
       <a class="header_catalog" *ngIf="isShowCatalog">{{headerItem3}}</a>
     </nav>
     <button (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
-    <button (click)="isUpperCase = !isUpperCase">Изменить текст</button>
   </div> 
-  
   <div class="header_right">
     <div class="header_right_phone">
      <a>
@@ -55,7 +53,6 @@
 </div>
 
 <button (click)="isShowImg = !isShowImg">Скрыть/Показать</button>
-
 <div *ngIf="isShowImg">
     <img class="image_worker" src="/assets/worker.png" alt="Рабочий">
 </div>
