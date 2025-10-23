@@ -1,0 +1,49 @@
+.user_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.user_cards {
+    
+    width: 200px; 
+    height: 200px; 
+    border: 1px solid black; 
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0px 20px 50px 0px rgba(18, 17, 39, 0.0784313725);
+}
+
+.user_delete {
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: white;
+    border: #F0BA4E solid 1px;
+    width: 129px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.cards_name {
+    font-size: 19px;
+}
+
+.image_mail {
+    width: 20px;
+    height: 20px;
+}
+
+.cards_mail {
+    display: flex;
+}
+
+.cards_website {
+    display: flex;
+}
+
+.image_website {
+    width: 20px;
+    height: 20px;
+}

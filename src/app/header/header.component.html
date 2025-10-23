@@ -1,0 +1,51 @@
+
+<div class="header">
+    <div class="header_left">
+      <div class="header_logo">
+        <img src="/assets/logo.svg" alt="Логотип">
+      </div>
+      <nav class="header_nav">
+        <a class="header_main">Главная</a>
+        <a class="header_aboutcompany">{{ aboutCompany }}</a>
+        <a class="header_catalog" *ngIf="isShowCatalog">{{ headerItem3 }}</a>
+      </nav>
+      <button (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
+    </div> 
+    <button (click)="changeMenuText()">Изменить текст</button>
+    <div class="header_right">
+      <div class="header_right_phone">
+       <a>
+        <img class="header_right_phone_img" src="/assets/phone.svg" alt="Телефон">
+       </a>
+        <a class="header_right_phone_number">+7 (965) 084-29-29</a>
+      </div>
+      <a>
+      <img class="header_right_heart" src="/assets/heart.svg" alt="Сердце">
+      </a>
+      <div class="header_button">
+        <button class="button">
+          <img class="header_button_bucket" src="/assets/bucket.svg" alt="Корзина">
+          <span class="header_button_empty">Пусто</span>
+        </button>  
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="container_left">
+      <img style="margin-right: 7px;" src="/assets/lines.svg" alt="Линии">
+      <div class="container_left_catalog" *ngFor="let item of menuItems"> {{ item }}
+      </div>
+    </div> 
+    <div class="container_right">
+      <div class="container_input">
+      <input class="container_search" type="search" placeholder="Поиск, например Круг зачистной">
+      <img src="/assets/glass.svg" alt="Лупа">
+      </div>
+      <div class="container_map">
+        <img class="container_right_map" src="/assets/map_point.svg" alt="Точка">
+        <span>Москва</span>
+      </div>
+    </div>
+  </div>
+  <button routerLink="/users">Пользователи</button>

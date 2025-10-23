@@ -1,0 +1,14 @@
+
+<div class="user_container">
+  <div class="user_cards" *ngFor="let item of users">
+    <p class="cards_name">{{(item).name}}</p>
+    <p class="cards_mail">{{(item).email}}
+      <img class="image_mail" src="/assets/mail.png" alt="mail">  
+    </p>
+    <p class="cards_website">{{(item).website}}
+        <img class="image_website" src="/assets/website.webp" alt="website">
+    </p>
+    <p>{{(item).company.name}}</p>
+    <button class="user_delete" (click)="deleteUser(item.id)">Удалить пользователя</button>
+  </div>
+</div>

@@ -1,57 +1,6 @@
-<div class="header">
-  <div class="header_left">
-    <div class="header_logo">
-      <img src="/assets/logo.svg" alt="Логотип">
-    </div>
-    <nav class="header_nav">
-      <a class="header_main">Главная</a>
-      <a class="header_aboutcompany">{{aboutCompany}}</a>
-      <a class="header_catalog" *ngIf="isShowCatalog">{{headerItem3}}</a>
-    </nav>
-    <button (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
-  </div> 
-  <div class="header_right">
-    <div class="header_right_phone">
-     <a>
-      <img class="header_right_phone_img" src="/assets/phone.svg" alt="Телефон">
-     </a>
-      <a class="header_right_phone_number">+7 (965) 084-29-29</a>
-    </div>
-    <a>
-    <img class="header_right_heart" src="/assets/heart.svg" alt="Сердце">
-    </a>
-    <div class="header_button">
-      <button class="button">
-        <img class="header_button_bucket" src="/assets/bucket.svg" alt="Корзина">
-        <span class="header_button_empty">Пусто</span>
-      </button>  
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="container_left">
-    <img style="margin-right: 7px;" src="/assets/lines.svg" alt="Линии">
-    <div>
-      <button class="container_left_catalog">Каталог</button>
-      <button class="container_left_materials">Стройматериалы</button>
-      <button class="container_left_tools">Инструменты</button>
-      <button class="container_left_electrics">Электрика</button>
-      <button class="container_left_cloth">Интерьер и одежда</button>
-    </div>
-  </div> 
-  <div class="container_right">
-    <div class="container_input">
-    <input class="container_search" type="search" placeholder="Поиск, например Круг зачистной">
-    <img src="/assets/glass.svg" alt="Лупа">
-    </div>
-    <div class="container_map">
-      <img class="container_right_map" src="/assets/map_point.svg" alt="Точка">
-      <span>Москва</span>
-    </div>
-  </div>
-</div>
-
+<!-- <app-header></app-header> -->
+<router-outlet></router-outlet>
+<!-- 
 <button (click)="isShowImg = !isShowImg">Скрыть/Показать</button>
 <div *ngIf="isShowImg">
     <img class="image_worker" src="/assets/worker.png" alt="Рабочий">
@@ -79,11 +28,12 @@
         <span class="shelf_grey_text">Многоуровневая <span class="shelf_black_text">cистема</span></span> <span>упраления качеством <span class="shelf_grey_text">по стандарту</span></span><span class="shelf_grey_text"> ISO 9001</span>
       </div>  
     </div>
+    
 </div>
 <div class="content_container">
   <div class="item_cards">
     <div class="item_cards__pagination">
-      <button class="item_cards__pagination_button active_button" *ngFor="let item of newPages">{{item}}</button>
+      <button class="item_cards__pagination_button active_button" *ngFor="let item of newPages">{{ item }}</button>
     </div>
     <div class="content_container">
       <div class="item_cards__grid">
@@ -467,4 +417,4 @@
     </div>
     <div class="underbottom_logos_right">© 2021-2022, EDE</div>
   </div>
-</div>
+</div> -->
